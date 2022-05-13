@@ -1,5 +1,6 @@
 .contenedor-principal {
-  grid-template-areas: "nav nav" "header header" "main main" "aside aside" "footer footer"; }
+  grid-template-areas: "nav nav" "header header" "main main" "aside aside" "footer footer";
+  background-color: darkgray; }
 
 .home-header {
   grid-area: header; }
@@ -9,20 +10,30 @@
     font-size: 30px; }
 
 .home-nav {
-  grid: nav; }
+  grid: nav;
+  margin: 10px 10px 25px 10px; }
 
 .home-main {
   grid-area: main;
   padding: 20px; }
   .home-main img {
-    margin: 30px; }
+    margin: 10px; }
 
 .home-aside {
   grid-area: aside;
   padding: 10px; }
   .home-aside img {
-    margin: 30px; }
+    margin: 10px; }
 
 .home-footer {
-  grid-area: footer;
-  margin: 40px; }
+  grid-area: footer; }
+  .home-footer h2 {
+    font-size: 40px; }
+  .home-footer h3 {
+    margin: 20px; }
+
+.div-footer {
+  margin: 25px; }
+
+.active {
+  color: black !important; }
