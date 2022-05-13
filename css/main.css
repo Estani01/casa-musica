@@ -1,0 +1,28 @@
+.contenedor-principal {
+  grid-template-areas: "nav nav" "header header" "main main" "aside aside" "footer footer"; }
+
+.home-header {
+  grid-area: header; }
+  .home-header h5 {
+    font-size: 150px; }
+  .home-header p {
+    font-size: 30px; }
+
+.home-nav {
+  grid: nav; }
+
+.home-main {
+  grid-area: main;
+  padding: 20px; }
+  .home-main img {
+    margin: 30px; }
+
+.home-aside {
+  grid-area: aside;
+  padding: 10px; }
+  .home-aside img {
+    margin: 30px; }
+
+.home-footer {
+  grid-area: footer;
+  margin: 40px; }

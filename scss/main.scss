@@ -1,15 +1,57 @@
-$color-primary: #b13f53
+
+.contenedor-principal{
+    grid-template-areas: 
+    "nav nav"
+    "header header"
+    "main main"
+    "aside aside"
+    "footer footer";
+}
+
+.home-header{
+    grid-area:  header;
+
+    h5{ font-size: 150px;}
+    p{
+        font-size: 30px;
+    }
+    
+
+}
+
 .home-nav{
-    background-color: $color-primary;
+    grid:  nav;
+
 }
 
+.home-main{ grid-area: main;
 
+    padding: 20px;
 
-.home-header{ color: aliceblue;
-    h1{
-        background-color: #b13f53;
+    img{
+        margin: 30px;
+
+       
     }
-    h2{
-        font-size: small;
-    }
+
+    
+
 }
+
+.home-aside{ grid-area: aside;
+
+    padding: 10px;
+
+    img{
+        margin: 30px;
+    }
+
+}
+
+.home-footer{ grid-area: footer;
+    margin: 40px;
+
+   
+
+}
+
