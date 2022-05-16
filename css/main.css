@@ -28,12 +28,22 @@
 .home-footer {
   grid-area: footer; }
   .home-footer h2 {
-    font-size: 40px; }
+    font-size: 40px;
+    font-weight: 400; }
   .home-footer h3 {
-    margin: 20px; }
+    margin: 20px;
+    font-weight: 500; }
 
-.div-footer {
-  margin: 25px; }
+.div-footer, .div-footer-2 {
+  margin: 25px;
+  border: solid 1px; }
+
+.div-footer-2 {
+  background-color: grey;
+  padding: 10px; }
 
 .active {
   color: black !important; }
+
+.home-marcas {
+  margin: 3px; }

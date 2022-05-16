@@ -50,22 +50,47 @@
     }
 
 }
+$font-weights:("regular":400, "medium":500 ,"bold":700);
+
 
 .home-footer{ grid-area: footer;
    ;
 
     h2{
         font-size: 40px;
+        font-weight: map-get($font-weights,"regular");
     }
     h3{
         margin: 20px;
+        font-weight: map-get($font-weights, "medium" );
     }
 
 }
 .div-footer{
     margin: 25px;
+    border: solid 1px;
+}
+
+.div-footer-2{
+    @extend .div-footer;
+    background-color:grey;
+    padding: 10px;
 }
 .active{
     color: black !important;
 }
+@mixin fotos-home {
+   
+    margin: 3px;
+    
+    
+    
+}
+    .home-marcas{
+        @include fotos-home()
+     
+    }
+
+   
+
 
