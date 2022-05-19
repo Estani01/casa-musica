@@ -1,3 +1,10 @@
+$color-1: black;
+    
+
+
+
+@import "_navbar";
+
 
 .contenedor-principal{
     grid-template-areas: 
@@ -7,7 +14,9 @@
     "aside aside"
     "footer footer";
 
-    background-color: darkgray;
+    background-color: $color-1;
+    color: white;
+
 }
 
 .home-header{
@@ -21,11 +30,11 @@
 
 }
 
-.home-nav{
-    grid:  nav;
-    margin: 10px 10px 25px 10px;
 
-}
+   
+
+
+
 
 .home-main{ grid-area: main;
 
@@ -41,40 +50,43 @@
 
 }
 
-.home-aside{ grid-area: aside;
 
-    padding: 10px;
-
-    img{
-        margin: 10px;
-    }
-
-}
 $font-weights:("regular":400, "medium":500 ,"bold":700);
 
 
-.home-footer{ grid-area: footer;
-   ;
+.home-aside {
+    grid-area: aside;
+    padding: 10px; }
+    .home-aside img {
+      margin: 10px; }
+        
+    
 
-    h2{
-        font-size: 40px;
-        font-weight: map-get($font-weights,"regular");
-    }
-    h3{
-        margin: 20px;
-        font-weight: map-get($font-weights, "medium" );
-    }
+    
+   
 
+    
+
+
+
+.home-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
+
 .div-footer{
     margin: 25px;
-    border: solid 1px;
+    
 }
 
 .div-footer-2{
     @extend .div-footer;
-    background-color:grey;
+    background-color:beige;
     padding: 10px;
+    color: blue;
+    align-items: flex-end;
 }
 .active{
     color: black !important;
@@ -91,6 +103,40 @@ $font-weights:("regular":400, "medium":500 ,"bold":700);
      
     }
 
+    .contenedor-guitarras{
+        background-color: white;
+    }
    
+    #carouselExampleDark{
+        margin: 100px 200px;
+    }
+
+    .guitarra-header{
+            img{
+                height: 700px;
+            }
+    }
+
+    
+    
+    .main-productos{
+       
+        img{
+            width: 800px;
+            height: 700px;
+            padding: 100px;
+        }
+        h5{
+            font-size: 70px;
+            color: black;
+
+        }
+        p{
+            font-size: 20px;
+            color: black;
+        }
+    }
 
 
+
+    @import "_responsive";

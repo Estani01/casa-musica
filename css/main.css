@@ -1,6 +1,12 @@
+.home-nav {
+  background-color: white !important; }
+  .home-nav img {
+    margin: 10px; }
+
 .contenedor-principal {
   grid-template-areas: "nav nav" "header header" "main main" "aside aside" "footer footer";
-  background-color: darkgray; }
+  background-color: black;
+  color: white; }
 
 .home-header {
   grid-area: header; }
@@ -8,10 +14,6 @@
     font-size: 150px; }
   .home-header p {
     font-size: 30px; }
-
-.home-nav {
-  grid: nav;
-  margin: 10px 10px 25px 10px; }
 
 .home-main {
   grid-area: main;
@@ -22,28 +24,88 @@
 .home-aside {
   grid-area: aside;
   padding: 10px; }
-  .home-aside img {
-    margin: 10px; }
+
+.home-aside img {
+  margin: 10px; }
 
 .home-footer {
-  grid-area: footer; }
-  .home-footer h2 {
-    font-size: 40px;
-    font-weight: 400; }
-  .home-footer h3 {
-    margin: 20px;
-    font-weight: 500; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
 
 .div-footer, .div-footer-2 {
-  margin: 25px;
-  border: solid 1px; }
+  margin: 25px; }
 
 .div-footer-2 {
-  background-color: grey;
-  padding: 10px; }
+  background-color: beige;
+  padding: 10px;
+  color: blue;
+  align-items: flex-end; }
 
 .active {
   color: black !important; }
 
 .home-marcas {
   margin: 3px; }
+
+.contenedor-guitarras {
+  background-color: white; }
+
+#carouselExampleDark {
+  margin: 100px 200px; }
+
+.guitarra-header img {
+  height: 700px; }
+
+.main-productos img {
+  width: 800px;
+  height: 700px;
+  padding: 100px; }
+
+.main-productos h5 {
+  font-size: 70px;
+  color: black; }
+
+.main-productos p {
+  font-size: 20px;
+  color: black; }
+
+@media screen and (max-width: 1000px) {
+  .home-marcas img {
+    width: 300px;
+    height: 250px; } }
+
+@media screen and (max-width: 685px) {
+  .home-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .main-productos img {
+    width: 500px;
+    height: 500px;
+    padding: 10px; }
+  .main-productos h5 {
+    font-size: 40px;
+    color: black; }
+  .main-productos p {
+    font-size: 10px;
+    color: black; }
+  .home-marcas img {
+    width: 200px;
+    height: 150px; } }
+
+@media screen and (max-width: 450px) {
+  .logo-daiam img {
+    width: 120px; }
+  .main-productos img {
+    width: 300px;
+    height: 350px;
+    padding: none; }
+  .main-productos h5 {
+    font-size: 20px;
+    color: black; }
+  .main-productos p {
+    font-size: 10px;
+    color: black; }
+  .home-aside {
+    flex-direction: column; } }

@@ -1,0 +1,91 @@
+@media screen and (max-width:1000px) {
+            .home-marcas{
+                            img{
+                                width: 300px;
+                                height: 250px;
+                            }
+            }
+    
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 685px) {
+
+
+    .home-footer{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;}
+
+        .main-productos{
+       
+            img{
+                width: 500px;
+                height: 500px;
+                padding: 10px;
+            }
+            h5{
+                font-size: 40px;
+                color: black;
+    
+            }
+            p{
+                font-size: 10px;
+                color: black;
+            }
+        }
+
+        .home-marcas{
+            img{
+                width: 200px;
+                height: 150px;
+            }
+}
+    
+
+    
+   
+
+    
+
+}
+@media screen and (max-width: 450px) {
+
+    .logo-daiam{
+        img{
+                width: 120px;
+        }
+}
+.main-productos{
+       
+    img{
+        width: 300px;
+        height: 350px;
+        padding: none
+    }
+    h5{
+        font-size: 20px;
+        color: black;
+
+    }
+    p{
+        font-size: 10px;
+        color: black;
+    }
+}
+    .home-aside{
+            flex-direction: column;
+            
+    }
+}
+   
+    
+
+
+
+             
