@@ -1,6 +1,6 @@
 $color-1: black;
     
-
+@import "_footer";
 
 
 @import "_navbar";
@@ -54,11 +54,7 @@ $color-1: black;
 $font-weights:("regular":400, "medium":500 ,"bold":700);
 
 
-.home-aside {
-    grid-area: aside;
-    padding: 10px; }
-    .home-aside img {
-      margin: 10px; }
+
         
     
 
@@ -69,42 +65,14 @@ $font-weights:("regular":400, "medium":500 ,"bold":700);
 
 
 
-.home-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
 
-
-.div-footer{
-    margin: 25px;
-    
-}
-
-.div-footer-2{
-    @extend .div-footer;
-    background-color:beige;
-    padding: 10px;
-    color: blue;
-    align-items: flex-end;
-}
 .active{
     color: black !important;
 }
-@mixin fotos-home {
-   
-    margin: 3px;
-    
-    
-    
-}
-    .home-marcas{
-        @include fotos-home()
-     
-    }
+
 
     .contenedor-guitarras{
-        background-color: white;
+        background-color: black;
     }
    
     #carouselExampleDark{
