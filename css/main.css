@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+  .home-footer a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: "regular";
+    text-decoration-color: none; }
 
 .div-footer {
   margin: 50px; }
@@ -16,14 +21,45 @@
     padding: 25px; }
 
 .home-nav {
-  background-color: white !important; }
+  background-color: black !important; }
   .home-nav img {
     margin: 10px; }
+
+.main-productos h3 {
+  color: white;
+  text-align: center;
+  font-style: inherit; }
+
+.section-productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px 20px;
+  color: white; }
+  .section-productos img {
+    height: 500px;
+    width: 200px; }
+    .section-productos img:hover {
+      height: 600px;
+      width: 250px;
+      transition: 1s; }
+  .section-productos div {
+    background-color: black; }
+  .section-productos h5 {
+    border: 2px solid lightseagreen;
+    background-color: azure;
+    color: black; }
+
+.card {
+  background-color: white !important; }
 
 .contenedor-principal {
   grid-template-areas: "nav nav" "header header" "main main" "aside aside" "footer footer";
   background-color: black;
   color: white; }
+
+.contenedor-productos {
+  background-color: black; }
 
 .home-header {
   grid-area: header; }
@@ -38,30 +74,30 @@
   .home-main img {
     margin: 10px; }
 
+.section-carrusel {
+  display: flex;
+  flex-direction: row !important;
+  background-color: black;
+  margin: 20px; }
+  .section-carrusel div {
+    margin: 20px;
+    background-color: black; }
+  .section-carrusel img {
+    height: 500px; }
+
+.card {
+  background-color: black; }
+
 .active {
   color: black !important; }
 
-.contenedor-guitarras {
-  background-color: black; }
-
-#carouselExampleDark {
-  margin: 100px 200px; }
-
-.guitarra-header img {
-  height: 700px; }
-
-.main-productos img {
-  width: 800px;
-  height: 700px;
-  padding: 100px; }
-
-.main-productos h5 {
-  font-size: 70px;
-  color: black; }
-
-.main-productos p {
-  font-size: 20px;
-  color: black; }
+@media screen and (max-width: 850px) {
+  .main-productos img {
+    width: 150px; }
+    .main-productos img:hover {
+      height: 550px;
+      width: 200px;
+      transition: 1s; } }
 
 @media screen and (max-width: 780px) {
   .div-footer-2 {
@@ -69,26 +105,19 @@
 
 @media screen and (max-width: 685px) {
   .main-productos img {
-    width: 500px;
-    height: 500px;
-    padding: 10px; }
-  .main-productos h5 {
-    font-size: 40px;
-    color: black; }
-  .main-productos p {
-    font-size: 10px;
-    color: black; } }
+    width: 120px; } }
+
+@media screen and (max-width: 600px) {
+  .section-productos {
+    display: flex;
+    flex-direction: column; }
+    .section-productos img {
+      width: 200px;
+      height: 550px; }
+  .card {
+    justify-content: center !important;
+    align-items: center; } }
 
 @media screen and (max-width: 450px) {
   .logo-daiam img {
-    width: 120px; }
-  .main-productos img {
-    width: 300px;
-    height: 350px;
-    padding: none; }
-  .main-productos h5 {
-    font-size: 20px;
-    color: black; }
-  .main-productos p {
-    font-size: 10px;
-    color: black; } }
+    width: 120px; } }

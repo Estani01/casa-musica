@@ -1,0 +1,37 @@
+.main-productos{
+    h3{
+        color: white;
+        text-align: center;
+        font-style: inherit;
+    }
+}
+
+
+
+.section-productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 20px;
+    color: white;
+                img{
+                    height: 500px;
+                    width: 200px;
+                    &:hover{
+                        height: 600px;
+                        width: 250px;
+                     transition: 1s;
+                    }
+                }
+                div{
+                    background-color: black;
+                }
+                h5{
+                    border: 2px solid lightseagreen;
+                    background-color: azure;
+                    color: black;
+                }
+}
+.card{
+    background-color: white !important;
+}

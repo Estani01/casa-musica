@@ -5,6 +5,8 @@ $color-1: black;
 
 @import "_navbar";
 
+@import "_main-productos";
+
 
 .contenedor-principal{
     grid-template-areas: 
@@ -17,6 +19,10 @@ $color-1: black;
     background-color: $color-1;
     color: white;
 
+}
+
+.contenedor-productos{
+    background-color: black;
 }
 
 .home-header{
@@ -50,6 +56,28 @@ $color-1: black;
 
 }
 
+.section-carrusel{
+                display: flex;
+                flex-direction: row !important;
+                background-color: black;
+                margin: 20px;
+
+                div{
+                    margin: 20px;
+                    background-color: black;
+                }
+
+                img{
+                    
+                    height: 500px;
+                }
+
+            }       
+
+            .card{
+                background-color: black;
+            }
+
 
 $font-weights:("regular":400, "medium":500 ,"bold":700);
 
@@ -71,39 +99,11 @@ $font-weights:("regular":400, "medium":500 ,"bold":700);
 }
 
 
-    .contenedor-guitarras{
-        background-color: black;
-    }
    
-    #carouselExampleDark{
-        margin: 100px 200px;
-    }
-
-    .guitarra-header{
-            img{
-                height: 700px;
-            }
-    }
 
     
     
-    .main-productos{
-       
-        img{
-            width: 800px;
-            height: 700px;
-            padding: 100px;
-        }
-        h5{
-            font-size: 70px;
-            color: black;
-
-        }
-        p{
-            font-size: 20px;
-            color: black;
-        }
-    }
+    
 
 
 
