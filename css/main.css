@@ -143,12 +143,6 @@
     padding: 10px; } }
 
 @media screen and (max-width: 850px) {
-  .main-productos img {
-    width: 150px; }
-    .main-productos img:hover {
-      height: 550px;
-      width: 200px;
-      transition: 1s; }
   .main-productos .section-bateria img {
     height: 400px;
     width: 300px; }
