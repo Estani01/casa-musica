@@ -18,7 +18,9 @@
 .div-footer-2 {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+  color: black;
+  background-color: darkgray; }
   .div-footer-2 div {
     padding: 25px; }
 
@@ -55,6 +57,40 @@
 
 .card {
   background-color: white !important; }
+
+.section-bateria {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px 20px;
+  text-align: center; }
+  .section-bateria img {
+    width: 600px;
+    height: 500px;
+    padding: 15px; }
+    .section-bateria img:hover {
+      width: 700px;
+      height: 600px;
+      transition: 1s; }
+  .section-bateria h4 {
+    color: black;
+    border: solid 3px red;
+    background-color: crimson; }
+
+.section-accesorios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  margin: 50px 20px; }
+  .section-accesorios img {
+    width: 300px;
+    height: 400px;
+    padding: 15px; }
+    .section-accesorios img:hover {
+      width: 350px;
+      height: 450px;
+      transition: 1s; }
 
 .contenedor-principal {
   grid-template-areas: "nav nav" "header header" "main main" "aside aside" "footer footer";
@@ -94,29 +130,81 @@
 .active {
   color: black !important; }
 
+@media screen and (max-width: 1200px) {
+  .section-bateria img {
+    height: 400px;
+    width: 400px; }
+    .section-bateria img:hover {
+      height: 450px;
+      width: 450px; }
+  .section-accesorios img {
+    width: 150px;
+    height: 250px;
+    padding: 10px; } }
+
 @media screen and (max-width: 850px) {
   .main-productos img {
     width: 150px; }
     .main-productos img:hover {
       height: 550px;
       width: 200px;
-      transition: 1s; } }
+      transition: 1s; }
+  .main-productos .section-bateria img {
+    height: 400px;
+    width: 300px; }
+    .main-productos .section-bateria img:hover {
+      height: 450px;
+      width: 350px; } }
 
 @media screen and (max-width: 800px) {
   .home-section img {
     width: 300px;
-    height: 200px; } }
+    height: 200px; }
+  .section-accesorios {
+    flex-direction: column;
+    margin: 50px 200px;
+    justify-content: space-around; }
+    .section-accesorios div {
+      margin: 30px 10px; }
+    .section-accesorios img {
+      width: 360px;
+      height: 400px;
+      padding: 10px; }
+      .section-accesorios img:hover {
+        width: 370px !important;
+        height: 410px !important;
+        transition: ease-in-out 1s; } }
 
 @media screen and (max-width: 780px) {
   .div-footer-2 {
     flex-direction: column; } }
 
 @media screen and (max-width: 685px) {
-  .main-productos img {
-    width: 120px; }
   .home-section img {
     width: 200px;
-    height: 150px; } }
+    height: 150px; }
+  .section-bateria {
+    flex-direction: column;
+    margin: 5px 70px; }
+    .section-bateria img {
+      height: 300px;
+      width: 400px;
+      align-items: center; }
+      .section-bateria img:hover {
+        height: 350px;
+        width: 450px; }
+  .section-accesorios {
+    margin: 50px 100px; }
+    .section-accesorios div {
+      margin: 30px 10px; }
+    .section-accesorios img {
+      width: 360px;
+      height: 400px;
+      padding: 10px; }
+      .section-accesorios img:hover {
+        width: 370px;
+        height: 410px;
+        transition: ease-in-out 1s; } }
 
 @media screen and (max-width: 600px) {
   .section-productos {
@@ -127,7 +215,22 @@
       height: 550px; }
   .card {
     justify-content: center !important;
-    align-items: center; } }
+    align-items: center; }
+  .div-footer img {
+    width: 100px;
+    height: 100px; } }
+
+@media screen and (max-width: 550px) {
+  .section-accesorios div {
+    margin: none;
+    justify-content: center;
+    width: 15rem !important; }
+  .section-accesorios img {
+    width: 200px;
+    height: 200px; }
+    .section-accesorios img:hover {
+      width: 220px !important;
+      height: 220px !important; } }
 
 @media screen and (max-width: 450px) {
   .logo-daiam img {
@@ -137,3 +240,14 @@
     .home-section img {
       width: 350px;
       height: 300px; } }
+
+@media screen and (max-width: 400px) {
+  .section-bateria {
+    margin: 5px 40px; }
+    .section-bateria img {
+      height: 300px;
+      width: 300px;
+      align-items: center; }
+      .section-bateria img:hover {
+        height: 350px;
+        width: 350px; } }
