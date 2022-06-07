@@ -1,7 +1,9 @@
 .home-footer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Indie Flower', cursive; }
   .home-footer a {
     text-decoration: none;
     font-size: 20px;
@@ -21,7 +23,8 @@
     padding: 25px; }
 
 .home-nav {
-  background-color: black !important; }
+  background-color: black !important;
+  color: blanchedalmond !important; }
   .home-nav img {
     margin: 10px; }
 
@@ -70,23 +73,23 @@
 
 .home-main {
   grid-area: main;
-  padding: 20px; }
-  .home-main img {
-    margin: 10px; }
-
-.section-carrusel {
   display: flex;
-  flex-direction: row !important;
-  background-color: black;
-  margin: 20px; }
-  .section-carrusel div {
-    margin: 20px;
-    background-color: black; }
-  .section-carrusel img {
-    height: 500px; }
+  flex-direction: column; }
 
-.card {
-  background-color: black; }
+.home-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 40px; }
+  .home-section img:hover {
+    height: 400px;
+    width: 500px;
+    transition: 1s ease-in-out; }
+  .home-section h3 {
+    color: lightskyblue;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Indie Flower', cursive; }
 
 .active {
   color: black !important; }
@@ -99,13 +102,21 @@
       width: 200px;
       transition: 1s; } }
 
+@media screen and (max-width: 800px) {
+  .home-section img {
+    width: 300px;
+    height: 200px; } }
+
 @media screen and (max-width: 780px) {
   .div-footer-2 {
     flex-direction: column; } }
 
 @media screen and (max-width: 685px) {
   .main-productos img {
-    width: 120px; } }
+    width: 120px; }
+  .home-section img {
+    width: 200px;
+    height: 150px; } }
 
 @media screen and (max-width: 600px) {
   .section-productos {
@@ -120,4 +131,9 @@
 
 @media screen and (max-width: 450px) {
   .logo-daiam img {
-    width: 120px; } }
+    width: 120px; }
+  .home-section {
+    flex-direction: column; }
+    .home-section img {
+      width: 350px;
+      height: 300px; } }

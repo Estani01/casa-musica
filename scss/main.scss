@@ -8,6 +8,8 @@ $color-1: black;
 @import "_main-productos";
 
 
+$font-weights:("regular":400, "medium":500 ,"bold":700);
+
 .contenedor-principal{
     grid-template-areas: 
     "nav nav"
@@ -44,42 +46,45 @@ $color-1: black;
 
 .home-main{ grid-area: main;
 
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
 
-    img{
-        margin: 10px;
-
-       
-    }
-
-    
-
+         
 }
 
-.section-carrusel{
-                display: flex;
-                flex-direction: row !important;
-                background-color: black;
-                margin: 20px;
+.home-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px;
+    
 
-                div{
-                    margin: 20px;
-                    background-color: black;
-                }
+                        div{
+                            
 
-                img{
-                    
-                    height: 500px;
-                }
+                        }
 
-            }       
+                        img{
+                            &:hover{
+                                height: 400px;
+                                width: 500px;
+                                transition: 1s ease-in-out;
+                            }
+                        }
 
-            .card{
-                background-color: black;
-            }
+                        h3{
+                            color: lightskyblue;
+                            text-align: center;
+                            font-family: 'Bebas Neue', cursive;
+                            font-family: 'Indie Flower', cursive;
+                            
+                        }
+}
 
 
-$font-weights:("regular":400, "medium":500 ,"bold":700);
+
+
+
 
 
 
