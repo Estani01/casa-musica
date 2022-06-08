@@ -24,6 +24,17 @@
   .div-footer-2 div {
     padding: 25px; }
 
+.link, .link-primarios, .link-secundarios {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: black; }
+
+.link-primarios:hover {
+  color: red; }
+
+.link-secundarios:hover {
+  color: blue; }
+
 .home-nav {
   background-color: black !important;
   color: blanchedalmond !important; }
@@ -39,7 +50,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 50px 20px;
+  margin: 50px 25px;
   color: white; }
   .section-productos img {
     height: 500px;
@@ -244,4 +255,7 @@
       align-items: center; }
       .section-bateria img:hover {
         height: 350px;
-        width: 350px; } }
+        width: 350px; }
+  .home-section img {
+    width: 250px;
+    height: 200px; } }

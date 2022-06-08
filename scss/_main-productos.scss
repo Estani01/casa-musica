@@ -8,13 +8,14 @@
     }
 }
 
+$numero1: 100px;
 
 
 .section-productos{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 50px 20px;
+    margin: $numero1/2 $numero1/4; 
     color: white;
                 img{
                     height: 500px;
@@ -45,12 +46,12 @@
             margin: 50px 20px;
             text-align: center;
                         img{
-                                width: 600px;
-                                height: 500px;
+                                width: $numero1*6;
+                                height: $numero1*5;
                                 padding: 15px;
                                 &:hover{
-                                    width: 700px;
-                                    height: 600px;
+                                    width: $numero1*7;
+                                    height: $numero1*6;
                                     transition: 1s;
                                     
                                 }
